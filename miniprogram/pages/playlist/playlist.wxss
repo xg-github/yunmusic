@@ -1,0 +1,19 @@
+.swiper{
+  -webkit-overflow-scrolling : touch;
+}
+
+.playlist-container {
+  display: flex;
+  /* 弹性换行 */
+  flex-wrap: wrap;  
+  /* 周围留白 */
+  justify-content: space-around;
+  margin-top: 10rpx;
+  /* 方向一致 */
+  flex-direction: row;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}

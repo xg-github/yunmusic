@@ -1,0 +1,14 @@
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="2000" duration="1000">
+  <block>
+  <swiper-item wx:for="{{swiperImgUrls}}" wx:key="url">
+    <image src="{{item.fileid}}"  mode="widthFix" class="img"></image>
+  </swiper-item>
+  </block>
+</swiper>
+
+<view class="playlist-container">
+  <block wx:for="{{playlist}}" wx:key="_id"> 
+    <!-- 因为这是自定义的组件，相关的配置要写到json -->
+    <x-playlist playlist="{{item}}"></x-playlist>
+  </block>
+</view>
